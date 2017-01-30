@@ -42,6 +42,7 @@ But how can we make it stronger?
 Well the use of passphrase while unpopular is always a feasible option. _So, for example this very sentence could be your next password._ But that rises another question if we begin using this type of password wont attackers just start cracking based on words in the English language with spaces in between? Yes, I predict they would but here we run into the entropy question again as the full 20 volume Oxford English Dictionary contains 171,476 individual entries for words so for the example above of an 11-word sentence it would take a cracker trying a billion word combinations per second 2.233 * 10^178557 years to completely crack out. Which is longer than the projected heat death of the known universe and we didn’t even calculate for punctuation, commas, spaces or even uppercase characters which would take even longer.
 
 But how do we make this a better password policy using this criterion. Here are my proposed changes
+
 ```
 Password Policy
 
