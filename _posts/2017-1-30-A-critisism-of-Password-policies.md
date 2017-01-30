@@ -4,8 +4,8 @@ title: A criticism of password policies
 category: blue
 ---
 
-In my short time in the industry I have noticed some disturbing things about passwords and the common policy’s that govern them. It seems that no matter the requirements that are imposed on any given corporation there is a lot of overlap no matter if you are trying comply with PCI, HIPPA, NIST, etc. ... This poses a problem because you will see a lot of common policies across a ton of different industries
-and the most common policies I see are something along these lines
+In my short time in the industry I have noticed some disturbing things about passwords and the common policies that govern them. It seems that no matter the requirements that are imposed on any given corporation there is a lot of overlap no matter if you are trying comply with PCI, HIPPA, NIST and orhers. This poses a problem because you will see a lot of common policies across a ton of different industries
+and the most common policies I see are something along these lines:
 
 ```
 Password Policy
@@ -21,21 +21,21 @@ Password Policy
 Passwords must be changed once every 90 days
 ```
 
-And while that may seem okay at first glance; over time you begin to see a lot of this
+While that may seem okay at first glance; over time you begin to see a lot of this
 
 `Password1!`
 
-Yes, that’s right it is the year 2017 and I am still seeing this password used in almost every environment I have seen. And while xkcd may have gotten something right with their comic on passwords and entropy they got their math wrong.
+Yes, that’s right! It is the year 2017 and I am still seeing this password used in almost every environment I have seen. While xkcd may have gotten something right with their comic on passwords and entropy, they got their math wrong.
 
 ![xkcd comic](/images/30Jan17/password_strength.png "xkcd Password Strength Comic")
 
-So, let’s break this down and get the math right. The English language contains 26 lowercase and 26 uppercase characters so right there in a single 1 character string you have 52 bytes of entropy. Now if we consider including the numbers 0-9 that’s an additional 10 bytes and then we add the special characters which adds an additional 32 bytes. Wait wait wait I hear you saying 32 bytes? Bro do you even count? Yes, I do and you are not considering characters like the brackets, greater or less than and quotes as well as tilde and backtick. So, if you are not using Alt-codes they typical QWERTY keyboard can give you a total of 94 bytes per character. So, to do this calculation at home you take the number of bytes of your password and you rise it to the power of how much entropy you have. 
+So, let’s break this down and get the math right. The English language contains 26 lowercase and 26 uppercase characters so right there in a single 1 character string you have 52 bytes of entropy. Now if we consider including the numbers 0-9 that’s an additional 10 bytes and then we add the special characters which adds an additional 32 bytes. Wait wait wait I hear you saying 32 bytes? Bro do you even count? Yes, I do and you are not considering characters like the brackets, greater or less than and quotes as well as tilde and backtick. So, if you are not using Alt-codes, the typical QWERTY keyboard can give you a total of 94 bytes per character. So, to do this calculation at home you take the number of bytes of your password and you rise it to the power of how much entropy you have. 
 
-So for the password in the comic _Tr0ub4dor&3_ you have Upper, lower, numeric and special characters across 11 characters so the math looks like 11^94 or 7.77 * 10^97 now to determine if it is strong or not we run it against a unrealistically strong cracker so for this example let’s say I am going to try to break this at 1 billion password attempts per second and it would still take 2.466 * 10^81 years at the most to break out using a brute force method.
+So for the password in the comic _Tr0ub4dor&3_ you have upper, lower, numeric and special characters across 11 characters so the math looks like 11^94 or 7.77 * 10^97. Now to determine if it is strong or not, we run it against a unrealistically strong cracker. So for this example let’s say I am going to try to break this at 1 billion password attempts per second. It would still take 2.466 * 10^81 years at the most to break out using a brute force method.
 
-Now let’s take a look at their proposed solution of _correct horse battery staple_ in this case you have 28 characters including spaces between the words using just the lowercase set so we have 27 bits of entropy so 28^27 is 1.18 * 10^39. Which is a significantly smaller space than the first password it would still take 37.5 * 10^21 years at the most to break out fully. 
+Now let’s take a look at their proposed solution of _correct horse battery staple_. In this case you have 28 characters including spaces between the words using just the lowercase set so we have 27 bits of entropy so 28^27 is 1.18 * 10^39. Which is a significantly smaller space than the first password it would still take 37.5 * 10^21 years at the most to break out fully. 
 
-Let recap so far, we have seen 2 examples of really good passwords that should last you until long after your death but they are both weak to one specific type of attack the Man-in-the-middle (MiTM) attack. In this attack the attacker sits in-between the user and the authentication service in this way they can intercept the authentication tokens as they pass from the user to the service. At this point all the entropy in the world won’t save you because the attacker already has your password. So how do we combat this? My recommendation is to implement two factor authentication (2FA) on every service you use. This is a type of authentication that uses a 6-8 digit numeric code that changes once every 30-60 seconds that is sent to you out of band and if that code is wrong even if the username and password is right the service will not authenticate you. In doing so we can limit an attackers window of opportunity to crack a password to 30-60 seconds.
+Let's recap so far, we have seen 2 examples of really good passwords that should last you until long after your death. However, they are both weak to one specific type of attack: the Man-in-the-middle (MiTM) attack. In this attack the attacker sits in-between the user and the authentication service service as to intercept the authentication tokens as they pass from the user to the service. At this point all the entropy in the world won’t save you because the attacker already has your password. So how do we combat this? My recommendation is to implement two factor authentication (2FA) on every service you use. This is a type of authentication that uses a 6-8 digit numeric code that changes once every 30-60 seconds. This is sent to you out of band through something like an SMS message or RSA token. If that code is wrong, even if the username and password is right, the service will not authenticate you. In doing so we can limit an attackers window of opportunity to crack a password to 30-60 seconds.
  
 But how can we make it stronger?
 
