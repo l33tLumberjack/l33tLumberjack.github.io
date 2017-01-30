@@ -8,10 +8,15 @@ In my short time in the industry I have noticed some disturbing things about pas
 and the most common policies I see are something along these lines
 
 `Password Policy`
+
 `8 characters Minimum`
+
 `1 Uppercase`
+
 `1 Number`
+
 `1 Special Character`
+
 `Passwords must be changed once every 90 days`
 
 And while that may seem okay at first glance; over time you begin to see a lot of this
@@ -37,9 +42,14 @@ Well the use of passphrase while unpopular is always a feasible option. So, for 
 But how do we make this a better password policy using this criterion. Here are my proposed changes
 
 `Password Policy`
+
 `10-word minimum`
+
 `1 Uppercase letter`
+
 `1 Punctuation Mark`
+
 `2FA Enabled`
+
 `Passwords must be changed once every year or whenever a user feels they might have been compromised`
 
