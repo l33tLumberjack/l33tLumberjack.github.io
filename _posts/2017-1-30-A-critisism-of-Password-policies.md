@@ -4,7 +4,7 @@ title: A criticism of password policies
 category: blue
 ---
 
-In my short time in the industry I have noticed some disturbing things about passwords and the common policies that govern them. It seems that no matter the requirements that are imposed on any given corporation there is a lot of overlap no matter if you are trying comply with PCI, HIPPA, NIST and orhers. This poses a problem because you will see a lot of common policies across a ton of different industries
+In my short time in the industry I have noticed some disturbing things about passwords and the common policies that govern them. It seems that no matter the requirements that are imposed on any given corporation there is a lot of overlap no matter if you are trying comply with PCI, HIPPA, NIST and others. This poses a problem because you will see a lot of common policies across a ton of different industries
 and the most common policies I see are something along these lines:
 
 ```
