@@ -32,7 +32,7 @@ window.onload = function() {
   var hash = window.location.hash.substring(1)
   
   if (hash.length) {
-    var slashIndex = hash.indexOf("/");
+    var slashIndex = hash.indexOf("/itty/");
     var title = hash.substring(0, slashIndex)
     if (title.length) QS("#doc-title").innerText = document.title = decodeURIComponent(title.replace(/_/g, " "));
     hash = hash.substring(slashIndex + 1);
