@@ -44,7 +44,7 @@ window.onhashchange = window.onload = function() {
     }
 
     // location.href = hash // Redirect to data URI in supported browsers
-    link.onclick = function() { location.href = "/edit" + location.hash }
+    link.onclick = function() { location.href = "/itty/edit" + location.hash }
 
     var isIE11 = navigator.userAgent.match(/rv:11/);
     decompressDataURI(hash, preamble, function(hash) {
