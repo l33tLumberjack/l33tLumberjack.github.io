@@ -21,7 +21,7 @@ var HEAD_TAGS = "PG1ldGEgY2hhcnNldD0idXRmLTgiPjxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb25
 window.onhashchange = window.onload = function() {
   var hash = window.location.hash.substring(1)
   if (hash.length < 3) {
-    location.href = "/edit"
+    location.href = "/itty/edit"
   } else {
     var iframe = document.getElementById('iframe');
     var link = document.getElementById('edit');
