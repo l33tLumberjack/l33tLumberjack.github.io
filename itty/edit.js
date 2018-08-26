@@ -195,7 +195,7 @@ function updateLink(url, title, push) {
   if (url.length) {
     url = "/#" + (title || "") + "/" + url
   } else {
-    url = "/edit"
+    url = "/itty/edit"
   }
   var hash = location.hash
   if (push || !hash || !hash.length) {
@@ -247,7 +247,7 @@ function copyLink() {
 }
 
 function saveLink() {
-  var url = "/" + location.hash
+  var url = "/itty/" + location.hash
   window.history.pushState(null, null, url);
   location.reload()   
 }
