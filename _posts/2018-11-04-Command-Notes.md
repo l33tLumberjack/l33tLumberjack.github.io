@@ -1,3 +1,9 @@
+---
+layout: post
+title: Command Notes
+category: blue
+---
+
 # Command-Notes
 _A collection of usefull commands_
 ```bash
