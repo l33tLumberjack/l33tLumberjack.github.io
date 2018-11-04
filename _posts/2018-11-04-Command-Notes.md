@@ -4,7 +4,6 @@ title: Command Notes
 category: blue
 ---
 
-# Command-Notes
 _A collection of usefull commands_
 ```bash
 #List all files in long listing in human readable format sorted by time
