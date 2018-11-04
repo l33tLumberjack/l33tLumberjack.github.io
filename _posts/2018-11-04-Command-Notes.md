@@ -71,7 +71,7 @@ chage -E 1 -I 1 -m 0 -M 99999 -W 7 username; chage -l username
 #!/bin/bash
 JarFiles=$(find / -type f -name struts.jar)
 for Jar in $JarFiles; do
-  JarVer=$(unzip -p "$Jar" META-INF/MANIFEST.MF | grep Specification-Version | awk -F: '{{print $2}')
+  JarVer=$(unzip -p "$Jar" META-INF/MANIFEST.MF | grep Specification-Version | awk -F: '{{print $2}}')
   echo "$Jar|$JarVer" >> "{parameter "outputFile"}"
 done
 ```
