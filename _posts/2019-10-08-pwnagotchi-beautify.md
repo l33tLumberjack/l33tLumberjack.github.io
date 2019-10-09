@@ -8,7 +8,7 @@ In this industry I see a lot a great projects. Code stacked in great monoliths t
 
 Step 1: Deciding on a case and ordering parts
 -----------------------
-The case you pick will ultimately decide what kind of environment your pwnagotchi will be used in and how much hassle you are willing to deal with. Take some time to consider the case that you pick and what your needs are for the project. For me I had several criteria that I knew I had to meet me selecting mine.
+The case you pick will ultimately decide what kind of environment your pwnagotchi will be used in and how much hassle you are willing to deal with. Take some time to consider the case that you pick and what your needs are for the project. For me I had several criteria that I knew I had to meet with selecting mine.
 
 * Weight
   * No more than a pound and a half grand total
