@@ -78,7 +78,7 @@ Once everything is good and dry you should be at the point where its all ready t
 
 Please note that at this point its a good time to do a quick test of the board to make sure that everything is functioning as expected. Click the button once to turn on the PiSugar and twice to turn it off. The 4 lights on that board will glow indicating a full charge and you should see that through the 4 holes in the side of the case any less than 4 lights indicates a discharged battery of 25%, 50%, 75% and 100% respectively. Additionally you should also see the raspberry pi indicator light flashing indicating a boot up and then it will blink 10 times *... I think* after the pwnagotchi software and config have been loaded.
 
-__An important note about changing, under no circumstances should you charge the PiSugar and run power to the Pi at the same time. The manufacturer has noted this has potential to short out the boards in the best case and may cause a fire in the worst case due to overcharging.__
+__An important note about charging, under no circumstances should you charge the PiSugar and run power to the Pi at the same time. The manufacturer has noted this has potential to short out the boards in the best case and may cause a fire in the worst case due to overcharging.__
 
 __If you run power to the PiSugar like seen in the photo it will keep the Pi on while it changes, this is normal behavior. Additionally I have seen no problems so far with running a data only line to a computer to tinker on the data port while I am float charging the battery on the PiSugar but I accept no responsibility in the event something happens to either you or your property. Tinker and charge at your own risk.__
 
