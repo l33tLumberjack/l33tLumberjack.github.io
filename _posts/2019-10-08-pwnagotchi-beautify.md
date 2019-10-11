@@ -80,7 +80,7 @@ Please note that at this point its a good time to do a quick test of the board t
 
 __An important note about charging, under no circumstances should you charge the PiSugar and run power to the Pi at the same time. The manufacturer has noted this has potential to short out the boards in the best case and may cause a fire in the worst case due to overcharging.__
 
-__If you run power to the PiSugar like seen in the photo it will keep the Pi on while it changes, this is normal behavior. Additionally I have seen no problems so far with running a data only line to a computer to tinker on the data port while I am float charging the battery on the PiSugar but I accept no responsibility in the event something happens to either you or your property. Tinker and charge at your own risk.__
+__If you run power to the PiSugar like seen in the photo it will keep the Pi on while it charges, this is normal behavior. Additionally I have seen no problems so far with running a data only line to a computer to tinker on the data port while I am float charging the battery on the PiSugar but I accept no responsibility in the event something happens to either you or your property. Tinker and charge at your own risk.__
 
 ![A quick test](/images/08Oct19/aQuickTest.jpg "A quick test")
 
