@@ -31,7 +31,7 @@ While I was in this step I began ordering some of the base components I would ne
 * A Screen
   * For me the [Waveshare 2.13in eInk display](https://www.amazon.com/gp/product/B071S8HT76) was the only one working when I sourced these parts again check the documentation on screens that are supported
 
-Ultimately I ended up going with the [PiSugar XL Case for the Raspberry Pi Zero W](https://github.com/PiSugar/PiSugar). In my eyes this case met all of the things that I wanted in this project of course this led me to my next big problem ...
+Ultimately I ended up going with the [PiSugar XL Case for the Raspberry Pi Zero W](https://github.com/PiSugar/PiSugar) and [PiSugar Cap](https://github.com/PiSugar/pisugar-case-pihat-cap). In my eyes this case met all of the things that I wanted in this project of course this led me to my next big problem ...
 
 Step 2: Sourcing the materials
 -----------------------
