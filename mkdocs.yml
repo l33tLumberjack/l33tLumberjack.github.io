@@ -1,0 +1,38 @@
+site_name: Shane Bradfield
+theme:
+        name: material
+        logo: img/assets/Avatar.jpeg
+        favicon: img/assets/Avatar.jpeg
+        features:
+          - navigation.expand
+        palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: grey
+          toggle:
+            icon: material/weather-night
+            name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: grey
+          accent: deep orange
+          toggle:
+            icon: material/weather-sunny
+            name: Switch to light mode
+repo_url: https://github.com/l33tLumberjack
+edit_uri: ""
+extra:
+  analytics:
+    provider: google
+    property: UA-53558428-2
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/l33tLumberjack
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/shane-bradfield-40a611b3/
+    - icon: fontawesome/brands/github
+      link: https://github.com/l33tLumberjack
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/arcfour
+    - icon: fontawesome/regular/envelope
+      link: mailto:shane.bradfield1@gmail.com
