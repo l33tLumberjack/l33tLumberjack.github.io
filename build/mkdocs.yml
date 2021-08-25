@@ -5,6 +5,8 @@ theme:
         favicon: img/assets/Avatar.jpeg
         features:
           - navigation.expand
+          - navigation.instant
+          - navigation.top
         palette:
         - media: "(prefers-color-scheme: light)"
           scheme: default
