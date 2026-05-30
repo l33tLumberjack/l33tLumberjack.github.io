@@ -31,6 +31,13 @@ Ensure you have Python installed, then install the necessary dependencies:
 pip install mkdocs-material
 ```
 
+If `mkdocs` is not installed globally, use a virtual environment:
+
+```bash
+python3 -m venv /tmp/l33t-mkdocs-venv
+/tmp/l33t-mkdocs-venv/bin/python -m pip install mkdocs-material
+```
+
 ### Local Development
 
 To preview the site locally with live reloading:
@@ -54,7 +61,8 @@ mkdocs build
 
 When making changes to the site:
 1. **Modify Source**: Always edit `.md` files within `build/docs/`.
-2. **Rebuild**: Run `mkdocs build` to update the generated HTML.
-3. **Verify**: Check the `build/site` directory to ensure your changes are reflected correctly.
+2. **Promote Drafts**: Drafts from `interview-template/new_post/` must be copied into `build/docs/Blog/` before building.
+3. **Rebuild**: Run `mkdocs build` to update the generated HTML.
+4. **Verify**: Check the `build/site` directory to ensure your changes are reflected correctly.
 
 For more detailed instructions on the development workflow, refer to [AGENTS.md](./AGENTS.md).
