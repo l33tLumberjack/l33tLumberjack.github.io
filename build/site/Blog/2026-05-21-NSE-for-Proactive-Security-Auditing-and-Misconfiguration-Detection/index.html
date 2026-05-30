@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../2018-11-04-Command-Notes/">
+        <link rel="prev" href="../2021-08-26-An-SSL-Primer/">
       
-      
-        <link rel="next" href="../2020-07-19-Boot2Root-Cybersploit2/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>pwnagotchi.beautify(); - Shane Bradfield</title>
+        <title>Using Nmap for Practical System Administration - Shane Bradfield</title>
       
     
     
@@ -84,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#step-1-deciding-on-a-case-and-ordering-parts" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              pwnagotchi.beautify();
+              Using Nmap for Practical System Administration
             
           </span>
         </div>
@@ -421,35 +419,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    pwnagotchi.beautify();
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2019-10-08-pwnagotchi-beautify/" class="md-nav__link">
         
   
   
@@ -465,68 +438,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-deciding-on-a-case-and-ordering-parts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: Deciding on a case and ordering parts
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-sourcing-the-materials" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: Sourcing the materials
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-decorating" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: Decorating
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-bringing-it-all-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 4: Bringing it all together
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -620,10 +531,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-05-21-NSE-for-Proactive-Security-Auditing-and-Misconfiguration-Detection/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Nmap for Practical System Administration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -639,6 +575,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-anti-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem / Anti-pattern
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution / Best Practice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legal-disclaimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legal Disclaimer
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -676,10 +707,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-deciding-on-a-case-and-ordering-parts" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: Deciding on a case and ordering parts
+        Introduction
       
     </span>
   </a>
@@ -687,10 +718,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-sourcing-the-materials" class="md-nav__link">
+  <a href="#questions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Sourcing the materials
+        Questions
       
     </span>
   </a>
@@ -698,10 +729,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-decorating" class="md-nav__link">
+  <a href="#problem-anti-pattern" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: Decorating
+        Problem / Anti-pattern
       
     </span>
   </a>
@@ -709,10 +740,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-bringing-it-all-together" class="md-nav__link">
+  <a href="#technical-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: Bringing it all together
+        Technical Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution / Best Practice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legal-disclaimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legal Disclaimer
       
     </span>
   </a>
@@ -736,66 +800,159 @@
 
 
 
-  <h1>pwnagotchi.beautify();</h1>
+  <h1>Using Nmap for Practical System Administration</h1>
 
-<p>In this industry I see a lot a great projects. Code stacked in great monoliths towering over us all. But at the end of the day that all it is line after line of words in a document. Its a real shame that so many great projects don't get the props they deserve because they look just like the rest. So today I figured I would go over how I breathed new life into my pwnagotchi killerB.</p>
-<h2 id="step-1-deciding-on-a-case-and-ordering-parts">Step 1: Deciding on a case and ordering parts</h2>
-<p>The case you pick will ultimately decide what kind of environment your pwnagotchi will be used in and how much hassle you are willing to deal with. Take some time to consider the case that you pick and what your needs are for the project. For me I had several criteria that I knew I had to meet me selecting mine.</p>
-<ul>
-<li>Weight</li>
-<li>No more than a pound and a half grand total</li>
-<li>Housing</li>
-<li>Something that I could easily decorate</li>
-<li>Does not conduct electricity</li>
-<li>Slip resistant</li>
-<li>Supports a 2.13in eInk Display</li>
-<li>Optional Features</li>
-<li>Battery that will get me more than 1 hour of run time by itself</li>
-</ul>
-<p>While I was in this step I began ordering some of the base components I would need for the project.</p>
-<ul>
-<li>An SD Card</li>
-<li>I like to have some space on my project to mess around so I went with a 128GB Sandisk but consult the project docs if you would like to go lower than 16GB</li>
-<li>A Raspberry Pi</li>
-<li>I went with the Zero W v1.1 on this build but I hear that the pwnagotchi will support 5Ghz on the Pi 4 model</li>
-<li>A Battery pack</li>
-<li>Ended up going with a <a href="https://www.amazon.com/gp/product/B07RC649ZC">PiSugar (1200 mAh Variant)</a></li>
-<li>A Screen</li>
-<li>For me the <a href="https://www.amazon.com/gp/product/B071S8HT76">Waveshare 2.13in eInk display</a> was the only one working when I sourced these parts again check the documentation on screens that are supported</li>
-</ul>
-<p>Ultimately I ended up going with the <a href="https://github.com/PiSugar/PiSugar">PiSugar XL Case for the Raspberry Pi Zero W</a>. In my eyes this case met all of the things that I wanted in this project of course this led me to my next big problem ...</p>
-<h2 id="step-2-sourcing-the-materials">Step 2: Sourcing the materials</h2>
-<p>So to my everlasting shame I don't own a 3D Printer nor do I have easy access to one. 3D modeling is a gap in my knowledge that I hope to address one day but I will be saving that for another project. Luckily for me there are plenty of very reputable business that will print just about anything you send them so long as they can read the files and it doesn't go against their terms of service. In my case I decided to go with Shapeways. For those who don't know who they are</p>
-<pre><code>Shapeways is a Dutch-founded, New York-based 3D printing marketplace and service, startup company. Users design and upload 3D printable files, and Shapeways prints the objects for them or others. Users can have objects printed in over 55 materials and finishes, these include: plastics, precious metals, steel and food-safe ceramics, which were discontinued and have been replaced by porcelain materials. As of 2019, Shapeways printed and sold more than ten million user-created objects.
+<h2 id="introduction">Introduction</h2>
+<p>Nmap gets treated like a hacker tool because that is the framing people like to argue about. That framing is lazy. For a system administrator, Nmap is a visibility tool. It answers boring, operationally important questions: What is alive? What is listening? Did somebody expose a new service? Did the TLS configuration drift? Is the firewall doing what the ticket says it should be doing?</p>
+<p>Those questions are not exotic. They are the daily work of keeping an environment from turning into a pile of undocumented exceptions. The anti-pattern is waiting for a vulnerability scanner, a monitoring alert, or a breach report to tell you what was already visible on the network. Nmap gives administrators a quick way to verify reality instead of trusting inventory spreadsheets and good intentions.</p>
+<h2 id="questions">Questions</h2>
+<ol>
+<li>
+<p><strong>What makes Nmap useful for normal system administration?</strong>
+   Nmap is useful because it turns network assumptions into testable facts. It can discover hosts, identify listening ports, fingerprint services, run safe NSE scripts, and save output in formats that can be compared later.</p>
+</li>
+<li>
+<p><strong>Is this only for security teams?</strong>
+   No. Security teams may use Nmap for reconnaissance, but administrators can use the same tool for change validation, service inventory, firewall testing, certificate review, and troubleshooting. The intent and scope matter.</p>
+</li>
+<li>
+<p><strong>What should an administrator scan first?</strong>
+   Start with networks and systems you own or are authorized to assess. Build a baseline before chasing obscure checks. A simple host discovery scan is often more useful than an aggressive scan run without context.</p>
+</li>
+</ol>
+<pre><code class="language-bash"># Bad Practice: Starting with an aggressive scan against an entire network
+nmap -A 192.0.2.0/24
 
-- https://en.wikipedia.org/wiki/Shapeways
+# Best Practice: Start with host discovery and narrow the scope
+nmap -sn 192.0.2.0/24
 </code></pre>
-<p>however there are many other companies that one could go with. Just google around for 3d printing services and I'm sure you will find one that fits your needs.</p>
-<p>If you choose to go the same route that I did then its as simple as logging in, uploading the STL files that you got from the Pi Sugar link from above and checking out. They will go ahead and inspect the models to let you know if there may be any issues with manufacturing and print the parts in your selected material. Once that's done they go ahead and ship you the parts.</p>
-<p><img alt="Shapeways Pricing" src="../../img/08Oct19/shapewaysPricing.png" title="Shapeways Pricing" /></p>
-<p>In my case the total ending up coming to $46.90 USD but deviating from the materials that I selected may change the cost.</p>
-<h2 id="step-3-decorating">Step 3: Decorating</h2>
-<p>Once all of the parts and peace's have been delivered its time to get to decorating! Remember that your pwnagotchi is as individual as you are and just like how I would assume you don't like looking bad neither does your pwnagotchi! For this build I will be using a base color of <a href="https://www.culturehustleusa.com/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material">BLACK 2.0 from Culture Hustle</a> as it is acrylic paint that works well on plastics and as an added bonus has some <a href="https://cdn.shopify.com/s/files/1/0077/6503/3018/products/Visible_blacks_only_1024x1024@2x.jpg?v=1556123632">very interesting light absorbing properties</a> that I hope to use in future projects. I will also be using some <a href="https://www.amazon.com/Citadel-Paint-Layer-Phalanx-Yellow/dp/B07STRP4BF">Citadel layer paint in Phalanx Yellow</a> for the detail work. This paint was chosen simply for aesthetic reasons and because its commonly used on Warhammer 40k figures which makes it very compatible with commonly used plastics.</p>
-<p><img alt="Parts and Paint" src="../../img/08Oct19/partsNPaint.jpg" title="Parts and Paint" /></p>
-<p>Once I had all of the things I needed it was time to get decorating! As you can see by this picture the Black paint is very thick; I was able to accomplish what you see here in one coat. This picture was taken while I was testing the compatibility of this paint with the plastic; upon finding no problems with it I knew it was safe to proceed with the rest of the parts.</p>
-<p><img alt="Paint Test" src="../../img/08Oct19/paintTest.jpg" title="Paint Test" /></p>
-<p><img alt="Paint it Black" src="../../img/08Oct19/paintItBlack.jpg" title="Paint it Black" /></p>
-<p>Once all the parts were painted they were set aside for 24 hours to cure completely. I've seen a couple of videos from the artist claiming that this paint actually gets darker the longer it cures up to 24 hours so I wanted to make sure I got the most out of the dark color.</p>
-<p><img alt="Drying Time" src="../../img/08Oct19/dryingTime.jpg" title="Drying Time" /></p>
-<p>Once the first round of drying was done it is time to add the details! To get these stripes I just used some masking tape to mark of an area and begin to generously add the Phalanx Yellow taking care to let it dry before adding a second coat and removing the masking tape. This process was repeated twice, once for each stripe.</p>
-<p><img alt="Add some flair" src="../../img/08Oct19/addSomeFlair.jpg" title="Add some flair" /></p>
-<h2 id="step-4-bringing-it-all-together">Step 4: Bringing it all together</h2>
-<p>Once everything is good and dry you should be at the point where its all ready to come together. You can begin by first putting the button into place and then adding the PiSugar board to the bottom of the case. Following that insert the plastic screws that come with it. I found that using the battery attached to the board and sliding it over so that it holds 2 of the screw's in place while you hold the other two with your fingers is a good way to keep them all in place while you insert the Pi with flashed SD card into the other side. Once that's done add the plastic spacers that come with and the plastic nuts and your good to go.</p>
-<p>Please note that at this point its a good time to do a quick test of the board to make sure that everything is functioning as expected. Click the button once to turn on the PiSugar and twice to turn it off. The 4 lights on that board will glow indicating a full charge and you should see that through the 4 holes in the side of the case any less than 4 lights indicates a discharged battery of 25%, 50%, 75% and 100% respectively. Additionally you should also see the raspberry pi indicator light flashing indicating a boot up and then it will blink 10 times <em>... I think</em> after the pwnagotchi software and config have been loaded.</p>
-<p><strong>An important note about changing, under no circumstances should you charge the PiSugar and run power to the Pi at the same time. The manufacturer has noted this has potential to short out the boards in the best case and may cause a fire in the worst case due to overcharging.</strong></p>
-<p><strong>If you run power to the PiSugar like seen in the photo it will keep the Pi on while it changes, this is normal behavior. Additionally I have seen no problems so far with running a data only line to a computer to tinker on the data port while I am float charging the battery on the PiSugar but I accept no responsibility in the event something happens to either you or your property. Tinker and charge at your own risk.</strong></p>
-<p><img alt="A quick test" src="../../img/08Oct19/aQuickTest.jpg" title="A quick test" /></p>
-<p>If you get to this point your pwnagotchi should look something like this.</p>
-<p><img alt="Front of Case" src="../../img/08Oct19/frontInCase.jpg" title="Front of Case" /></p>
-<p><img alt="Back of Case" src="../../img/08Oct19/backInCase.jpg" title="Back of Case" /></p>
-<p><strong>Please don't be and idiot like me and forget to remove any heatsinks on the Pi before adding the eInk Display. Any heatsinks present will most assuredly destroy the back of your eInk and you will have to order a new one if you fuck it up. There is not enough room in this case for both.</strong></p>
-<p>Once you have heeded the warning above you can line up your eInk Display and add it to the header pins. This done you can snap on the back and front panels and take your brand new and beautiful pwnagotchi for a walk!</p>
-<p><img alt="killerB" src="../../img/08Oct19/killerB.jpg" title="killerB" /></p>
+<ol>
+<li><strong>How can Nmap help with asset inventory?</strong>
+   Run discovery scans against approved network ranges and compare the results to your CMDB, DHCP leases, cloud inventory, or monitoring platform. Any host that appears on the wire but not in inventory deserves an explanation.</li>
+</ol>
+<pre><code class="language-bash">nmap -sn 192.0.2.0/24 -oA scans/office-discovery-2026-05-21
+</code></pre>
+<ol>
+<li><strong>How can Nmap help with service drift?</strong>
+   Service drift is when a host slowly stops matching the design. Maybe SSH appears on a database server. Maybe a temporary web listener never got removed. A targeted service scan makes those changes visible.</li>
+</ol>
+<pre><code class="language-bash"># Bad Practice: Trusting that the build standard still matches reality
+# &quot;This server should only expose HTTPS, so it probably does.&quot;
+
+# Best Practice: Verify the exposed services
+nmap -sV --top-ports 100 app01.example.com
+</code></pre>
+<ol>
+<li><strong>Where does the Nmap Scripting Engine fit?</strong>
+   NSE scripts are useful when the question is deeper than "is the port open?" For example, <code>ssl-cert</code> can inspect certificate details, <code>ssh2-enum-algos</code> can list SSH algorithms, and <code>ssl-enum-ciphers</code> can review TLS support when a noisier TLS check is approved.</li>
+</ol>
+<pre><code class="language-bash">nmap -sV --script ssl-cert,ssl-enum-ciphers -p 443 www.example.com
+nmap -sV --script ssh2-enum-algos -p 22 jump01.example.com
+</code></pre>
+<ol>
+<li><strong>Can Nmap validate firewall changes?</strong>
+   Yes. After a firewall rule change, scan from the same network perspective as the expected client. A scan from your laptop does not validate the same thing as a scan from an application subnet.</li>
+</ol>
+<pre><code class="language-bash"># Bad Practice: Closing the ticket because the firewall rule was entered
+# Best Practice: Test the port from the expected source network
+nmap -Pn -p 22,80,443 db01.example.com
+</code></pre>
+<ol>
+<li><strong>Can Nmap help troubleshoot DNS, NTP, SNMP, and SMB?</strong>
+   Yes, as long as you use targeted checks. A sysadmin does not need a noisy "scan everything" habit. Pick the protocol, pick the host, and ask a specific question.</li>
+</ol>
+<pre><code class="language-bash">nmap -sU -p 53 --script dns-recursion dns01.example.com
+nmap -sU -p 123 --script ntp-info ntp01.example.com
+nmap -sU -p 161 --script snmp-info printer01.example.com
+nmap -sV -p 445 --script smb-protocols,smb-security-mode fileserver01.example.com
+</code></pre>
+<ol>
+<li><strong>How should Nmap output be handled?</strong>
+   Save it. Terminal output is for eyeballs; structured output is for operations. Use normal, grepable, or XML output depending on what you need to do next.</li>
+</ol>
+<pre><code class="language-bash">nmap -sV -p 22,80,443 web01.example.com -oA scans/web01-service-baseline
+</code></pre>
+<ol>
+<li><strong>What should administrators avoid?</strong>
+    Avoid surprise scans, unauthorized targets, brute-force scripts, denial-of-service scripts, and aggressive options against fragile systems. The point is operational visibility, not proving that production can be made worse at 2:00 PM on a Tuesday.</li>
+</ol>
+<h2 id="problem-anti-pattern">Problem / Anti-pattern</h2>
+<p>The common anti-pattern is treating network exposure as a documentation problem. A diagram says the server has HTTPS open. A ticket says the firewall allows only port 443. A spreadsheet says the printer is on the facilities VLAN. Everyone nods, and nobody checks.</p>
+<p>That is how small exceptions become permanent architecture.</p>
+<p>Another bad habit is using Nmap only in panic mode. Something breaks, a port scan happens, and the output becomes a one-off troubleshooting artifact that disappears into a terminal scrollback. That helps in the moment, but it does not build operational memory.</p>
+<p>Nmap is much more valuable when it becomes part of routine administration:</p>
+<ul>
+<li>After provisioning a server, verify expected exposure.</li>
+<li>After a firewall change, test from the correct source network.</li>
+<li>After a certificate renewal, inspect the served certificate.</li>
+<li>After decommissioning a service, confirm the port is closed.</li>
+<li>On a schedule, compare actual network services against the intended baseline.</li>
+</ul>
+<h2 id="technical-analysis">Technical Analysis</h2>
+<p>There are three practical layers to using Nmap well as an administrator.</p>
+<p>The first layer is discovery. This is where <code>-sn</code> is useful. It tells you which hosts appear alive without doing a full port scan. It is not perfect, because firewalls and host configurations can block discovery probes, but it is a clean starting point.</p>
+<pre><code class="language-bash">nmap -sn 192.0.2.0/24
+</code></pre>
+<p>The second layer is service inventory. This is where <code>-sV</code> earns its keep. A port number alone is not enough. Port 443 might be nginx, Apache, a load balancer, a storage appliance, or a forgotten management UI. Service detection helps turn an open port into an actual administrative lead.</p>
+<pre><code class="language-bash">nmap -sV -p 22,80,443,445 host01.example.com
+</code></pre>
+<p>The third layer is focused protocol inspection with NSE. This is where administrators should be selective. NSE has powerful scripts, and not all of them are appropriate for routine production checks. For sysadmin work, prefer scripts that inspect and report rather than scripts that brute-force, exploit, or stress a service. Treat noisy scripts, including TLS cipher enumeration, as approved change windows or targeted checks instead of casual background noise.</p>
+<p>Useful administrative checks include:</p>
+<ul>
+<li><code>ssl-cert</code> for certificate subject, issuer, validity, and names.</li>
+<li><code>ssl-enum-ciphers</code> for TLS protocol and cipher support, with the caveat that it is noisy.</li>
+<li><code>ssh2-enum-algos</code> for SSH algorithm review.</li>
+<li><code>http-title</code> and <code>http-headers</code> for quick web service identification.</li>
+<li><code>dns-recursion</code> for checking whether a DNS server allows recursion.</li>
+<li><code>smb-protocols</code> and <code>smb-security-mode</code> for SMB exposure and signing posture.</li>
+</ul>
+<pre><code class="language-bash">nmap -sV --script http-title,http-headers -p 80,443 intranet.example.com
+nmap -sV --script ssl-cert,ssl-enum-ciphers -p 443 intranet.example.com
+nmap -sV --script ssh2-enum-algos -p 22 admin01.example.com
+</code></pre>
+<p>Nmap also helps with change control. If a ticket says only HTTPS should be exposed, scan the host before and after the change. If the intended result is "SSH closed from this subnet," test from that subnet. The best practice is to turn the desired state into a command that can prove or disprove it.</p>
+<pre><code class="language-bash"># Bad Practice: &quot;The firewall team says it is fixed.&quot;
+
+# Best Practice: Validate the expected state from the affected network
+nmap -Pn -p 22,443 app01.example.com
+</code></pre>
+<p>Output handling matters. Use <code>-oA</code> when you want all common output formats with the same basename. Store the results somewhere predictable. Even without a fancy pipeline, this gives you historical evidence when someone asks, "Has this always been open?"</p>
+<pre><code class="language-bash">mkdir -p scans
+nmap -sV --top-ports 100 app01.example.com -oA scans/app01-baseline
+</code></pre>
+<h2 id="solution-best-practice">Solution / Best Practice</h2>
+<p>Use Nmap as a verification tool with defined scope, not as a random network cannon.</p>
+<p>Start with a small operating model:</p>
+<ul>
+<li>Define the authorized networks and hosts.</li>
+<li>Choose a few routine scan profiles.</li>
+<li>Prefer safe discovery, service detection, and approved NSE scripts.</li>
+<li>Save scan output with predictable names.</li>
+<li>Review differences as operational drift, not trivia.</li>
+</ul>
+<p>A practical baseline workflow looks like this:</p>
+<pre><code class="language-bash"># 1. Discover live hosts in an authorized range
+nmap -sn 192.0.2.0/24 -oA scans/site-discovery
+
+# 2. Check common services on a known server
+nmap -sV --top-ports 100 app01.example.com -oA scans/app01-services
+
+# 3. Inspect HTTPS configuration
+nmap -sV --script ssl-cert,ssl-enum-ciphers -p 443 app01.example.com -oA scans/app01-tls
+
+# 4. Verify SSH exposure from the current network location
+nmap -Pn -p 22 app01.example.com -oA scans/app01-ssh-check
+</code></pre>
+<p>For scheduled checks, keep the scope boring and documented. A weekly scan of known servers for expected management ports is useful. A surprise run of every script category against every production host is not administration; it is avoidable noise.</p>
+<pre><code class="language-bash"># Example cron entry for a narrow weekly service inventory
+0 3 * * 0 /usr/bin/nmap -sV -p 22,80,443,445 -iL /etc/nmap/managed-hosts.txt -oA /var/log/nmap/managed-services
+</code></pre>
+<p>The result should feed a review habit. New service on a server? Find the change. Expired certificate? Fix the renewal path. Unexpected SMB exposure? Check the host role and firewall policy. Nmap does not replace asset management, monitoring, or vulnerability management, but it gives you a fast way to challenge their assumptions.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Nmap is at its best when system administrators use it to verify the boring things that quietly become outages and findings. Is the host alive? Is the expected service listening? Did the firewall rule work? Is the certificate actually the one you think it is? Are legacy protocols still enabled?</p>
+<p>That is not glamorous work, but it is real administration. The network does not care what the spreadsheet says. Use Nmap to check the truth, save the results, and treat drift as something to investigate before it becomes somebody else's incident report.</p>
+<h2 id="legal-disclaimer">Legal Disclaimer</h2>
+<p>All opinions expressed in this blog post are my own and do not reflect the views of my employer. Technical examples are provided for educational use in systems you own or are authorized to assess.</p>
 
 
 
