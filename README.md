@@ -21,6 +21,8 @@ The site serves as a personal blog and documentation hub, featuring technical wr
 - `assets/`: Static assets including CSS, JavaScript, and images used by the site.
 - `Blog/`: Generated HTML directory containing individual blog post pages.
 
+GitHub Pages serves this repository from the root, so root-level generated files such as `index.html`, `404.html`, `Blog/`, `assets/`, `search/`, and sitemap files must stay in sync with `build/site/`.
+
 ## ⚙️ Development & Build Instructions
 
 ### Prerequisites
@@ -57,12 +59,25 @@ cd build
 mkdocs build
 ```
 
+Then sync the generated deployment output back to the repository root:
+
+```bash
+cd ..
+rsync -av --delete build/site/Blog/ Blog/
+rsync -av --delete build/site/assets/ assets/
+rsync -av --delete build/site/search/ search/
+cp build/site/index.html build/site/404.html build/site/sitemap.xml build/site/sitemap.xml.gz .
+```
+
+Do not sync only `Blog/`. MkDocs Material uses hashed CSS and JavaScript filenames, so the deployed HTML and `assets/` directory must be updated together or the live site can render without styling.
+
 ## 📝 Contributing
 
 When making changes to the site:
 1. **Modify Source**: Always edit `.md` files within `build/docs/`.
 2. **Promote Drafts**: Drafts from `interview-template/new_post/` must be copied into `build/docs/Blog/` before building.
 3. **Rebuild**: Run `mkdocs build` to update the generated HTML.
-4. **Verify**: Check the `build/site` directory to ensure your changes are reflected correctly.
+4. **Sync Deployment Output**: Copy the matching generated `build/site` files to the repository root before deploying.
+5. **Verify**: Check the root-served page and confirm the referenced CSS/JS assets return `200`.
 
 For more detailed instructions on the development workflow, refer to [AGENTS.md](./AGENTS.md).
